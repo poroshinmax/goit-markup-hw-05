@@ -354,11 +354,55 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
+        <button type="button" class="modal-close-btn"  data-modal-close>
           <svg class="icon-close" width="30" height="30">
             <use href="./images/icons.svg#icon-close-black-18dp"></use>
           </svg>
         </button>
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="form">
+          <div class="form-fild">
+            <label for="Имя">Имя</label>
+          <input 
+          type="text" 
+          name="users" 
+          id="Имя" 
+          minlength="2" 
+          placeholder="George Washington" 
+          required>
+          <svg class="icon-form" width="18" height="18">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+          </div>
+          <div class="form-fild">
+          <label for="Телефон">Телефон</label>
+          <input type="tel" name="users" id="Телефон" minlength="10" placeholder="011-111-11-11" required>
+          <svg class="icon-form" width="18" height="18">
+            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+          </svg>
+          </div>
+          <div class="form-fild">
+          <label for="Почта">Почта</label>
+          <input type="mail" name="users-mail" id="Почта" minlength="10" placeholder="mymail@mail.com" required>
+          <svg class="icon-form" width="18" height="18">
+            <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+          </svg>
+          </div>
+          <div class="form-fild">
+            <label for="Коментарий">Коментарий</label>
+          <textarea class="comment" name="users-comment" id="Коментарий" rows="10" placeholder="Введите текст"></textarea>
+          </div>
+          <div class="check">
+            <label for="polici" class="topic-text">
+              <input class="checkbox" type="checkbox" name="polici" id="polici" required>
+              Соглашаюсь с рассылкой и принимаю 
+              <a href="" class="polici-link">Условия договора</a>
+              <span class="icon-check"></span>
+            </label>
+          
+          </div>
+          <button type="submit" class="form-btn">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
